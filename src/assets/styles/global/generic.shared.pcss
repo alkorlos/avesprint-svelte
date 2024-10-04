@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.html {
+	font-family: "Golos Text", sans-serif;
+	font-size: 16px;
+	text-size-adjust: none;
+}
+
+.body {
+	margin: 0;
+	&:has(.menu__button--active) {
+		overflow: hidden; /* fix mobile menu */
+	}
+}
